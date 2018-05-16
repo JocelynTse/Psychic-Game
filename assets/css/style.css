@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#container {
+    background-image: url("../images/stars.png"), url("..images/crystal_ball.png");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    padding: 225px;
+}
+
+h1  {
+    font-family: 'Kavivanar', cursive;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+body {
+    font-family: 'Kavivanar', cursive;
+    font-size: 18px;
+    line-height: 34px;
+    color: #f7ca43;
+
+}
+
+
+    
