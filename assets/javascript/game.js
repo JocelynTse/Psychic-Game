@@ -20,6 +20,7 @@ document.onkeyup = function (event) {
         wins++;
         alert("You guessed correctly!");
         guesses = 9;
+        letters = [];
 
     } else if (user !== computer && guesses > 0) {
         guesses = guesses - 1;
@@ -28,17 +29,18 @@ document.onkeyup = function (event) {
         losses++;
         alert("Try again!");
         guesses = 9;
+        letters = [];
     }
         console.log(letters)
-        
+
     //Variable for html - keeps  track of guesses, wins, & losses    
     var html =
         "<h1>The Psychic Game</h1>" +
         "<p>Guess what letter I'm thinking of..." +
         "<p>Wins: " + wins + "</p>" +
         "<p>Losses: " + losses + "</p>" +
-        "<p>Guesses Left: " + guesses + "</p>"
-    "<p>Your Guesses so far: " + letters + "</p>";
+        "<p>Guesses Left: " + guesses + "</p>" +
+        "<p>Your Guesses so far: " + letters + "</p>";
 
     document.querySelector("#game").innerHTML = html;
 }
